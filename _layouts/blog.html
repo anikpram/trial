@@ -1,0 +1,70 @@
+---
+layout: default
+title: bpost
+---
+
+
+
+
+<div class="intro">
+
+
+  <h1 style="margin-top: 25%; margin-bottom: 3%; font-size: 300%; font-weight:400">{% katexmm %} {{ page.title }} {% endkatexmm %}</h1>
+  <div style="margin-bottom: 7%; font-weight: 100; font-size: 120%">{% katexmm %} {{ page.subtitle }} {% endkatexmm %}</div>
+
+
+</div>
+
+
+<hr>
+
+
+<div class="intro">
+
+
+  <div style="width:30%; display:inline-block; margin-top:2%; margin-bottom:2%">
+    <span style="font-size:50%">
+    AUTHORS
+    </span>
+    <br>
+    <span style="font-size:80%; font-weight:500">
+    {{ page.author }}
+    </span>
+  </div>
+
+  <div style="width:30%; display:inline-block">
+    <span style="font-size:50%">
+    AFFILIATIONS
+    </span>
+    <br>
+    <span style="font-size:80%; font-weight:100">
+    {{ page.affiliation }}
+    </span>
+  </div>
+
+  <div style="width:30%; display:inline-block">
+    <span style="font-size:50%">
+    PUBLISHED
+    </span>
+    <br>
+    <span style="font-size:80%; font-weight:100">
+    {{ page.date | date_to_long_string }}
+    </span>
+  </div>
+
+
+</div>
+
+<hr>
+
+
+
+<div class="intro">
+{{ content }}
+</div>
+
+
+
+
+</body>
+</html>

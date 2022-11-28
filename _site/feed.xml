@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-28T08:37:00-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Aniket Pramanik</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Bayesian Binary Hypothesis Testing</title><link href="http://localhost:4000/2022/10/09/bayesian_binary_hypothesis_testing.html" rel="alternate" type="text/html" title="Bayesian Binary Hypothesis Testing" /><published>2022-10-09T10:17:40-05:00</published><updated>2022-10-09T10:17:40-05:00</updated><id>http://localhost:4000/2022/10/09/bayesian_binary_hypothesis_testing</id><content type="html" xml:base="http://localhost:4000/2022/10/09/bayesian_binary_hypothesis_testing.html"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<p>Suppose there are two hypotheses in the world, namely $H_0, H_1$ and observations possible from two different categories $Y_0, Y_1$. An observation $y$ is assigned to either of the sets ($Y_0/Y_1$) depending on either of the hypotheses being true.</p>]]></content><author><name>Aniket Pramanik</name></author><category term="detection" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Multivariate gaussian Distribution</title><link href="http://localhost:4000/2022/09/25/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Multivariate gaussian Distribution" /><published>2022-09-25T18:53:40-05:00</published><updated>2022-09-25T18:53:40-05:00</updated><id>http://localhost:4000/2022/09/25/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2022/09/25/welcome-to-jekyll.html"><![CDATA[<p>Suppose we have a vector $\mathbf X \in \mathbb{R}^n$ such that
+\(\mathbf X = \begin{bmatrix}
+\mathbf x_1 \\
+\vdots \\
+\mathbf x_n
+\end{bmatrix}\)
+is a vector consisting of $n$ Gaussian distributed random variables $ \mathbf x_i \hspace{4pt} \forall \hspace{2pt} i \in {1,2, \dots n}$. $\mathbf X$ is called a Gaussian random vector with jointly Gaussian distributed random variable (r.v.) $\mathbf x_i \hspace{4pt} \forall \hspace{2pt} i.$</p>
+
+<p>The probability density function (pdf) of a r.v. $\mathbf x_i$ is given as</p>
+
+\[f_{\mathbf x_i}(x_i) = \frac{1}{\boldsymbol \sigma_{\mathbf x_i} \sqrt{2\pi}} \exp\left( -\frac{1}{2}\left(\frac{x_i - \boldsymbol \mu_{\mathbf x_i}}{\boldsymbol \sigma_{\mathbf x_i}}\right)^2 \right)\]
+
+<p>where $\boldsymbol \mu_{\mathbf x_i}$ and $\boldsymbol \sigma_{\mathbf x_i}$ are mean and variance of $\mathbf x_i$ respectively.</p>
+
+\[\mathbf x_i \sim \mathcal N(\boldsymbol \mu_{\mathbf x_i}, \boldsymbol \sigma_{\mathbf x_i}).\]
+
+<p>The pdf of $\mathbf X$ is given as,</p>
+
+\[f_{\mathbf X}(x) = \frac{1}{|\boldsymbol \Sigma_{\mathbf X}| (\sqrt{2\pi})^N} \exp\left[ -\frac{1}{2}(\mathbf X - \boldsymbol \mu_{\mathbf X}) \boldsymbol \Sigma_{\mathbf X}^{-1} (\mathbf X - \boldsymbol \mu_{\mathbf X})^T \right]\]
+
+<p>where $\boldsymbol \mu_{\mathbf X}$ and $\boldsymbol \Sigma_{\mathbf X}$ are the mean vector and covariance matrix of $\mathbf X$ respectively. $|\boldsymbol \Sigma_{\mathbf X}|$ denotes determinant of $\boldsymbol \Sigma_{\mathbf X}$.</p>
+
+\[\mathbf X \sim \mathcal N(\boldsymbol \mu_{\mathbf X}, \boldsymbol \Sigma_{\mathbf X}).\]]]></content><author><name>Aniket Pramanik</name></author><category term="probability" /><category term="detection" /><summary type="html"><![CDATA[Suppose we have a vector $\mathbf X \in \mathbb{R}^n$ such that \(\mathbf X = \begin{bmatrix} \mathbf x_1 \\ \vdots \\ \mathbf x_n \end{bmatrix}\) is a vector consisting of $n$ Gaussian distributed random variables $ \mathbf x_i \hspace{4pt} \forall \hspace{2pt} i \in {1,2, \dots n}$. $\mathbf X$ is called a Gaussian random vector with jointly Gaussian distributed random variable (r.v.) $\mathbf x_i \hspace{4pt} \forall \hspace{2pt} i.$]]></summary></entry></feed>
